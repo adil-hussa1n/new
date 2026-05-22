@@ -216,12 +216,19 @@
     font-size: 0.85rem !important;
   }
 
+  /* Disable backdrop-filter on mobile for GPU performance */
   .project-card-wrapper {
     height: 240px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(18, 18, 24, 0.92);
   }
 
   .project-overlay {
     padding: 15px;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(8, 8, 12, 0.85) !important;
   }
 
   .project-overlay-content h4 {

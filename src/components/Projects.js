@@ -4,14 +4,14 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Projects.css';
 
-// Import project images
-import ecommerceImg from "../assets/img/project-ecommerce.png";
-import saasImg from "../assets/img/project-saas.png";
-import fitnessImg from "../assets/img/project-fitness.png";
-import brandingImg from "../assets/img/project-branding.png";
-import aiImg from "../assets/img/project-ai.png";
-import cloudImg from "../assets/img/project-cloud.png";
-import marketingImg from "../assets/img/project-marketing.png";
+// Import optimized project images (WebP)
+import ecommerceImg from "../assets/img/project-ecommerce.webp";
+import saasImg from "../assets/img/project-saas.webp";
+import fitnessImg from "../assets/img/project-fitness.webp";
+import brandingImg from "../assets/img/project-branding.webp";
+import aiImg from "../assets/img/project-ai.webp";
+import cloudImg from "../assets/img/project-cloud.webp";
+import marketingImg from "../assets/img/project-marketing.webp";
 
 export const Projects = () => {
   const [filter, setFilter] = useState("All");
@@ -145,7 +145,7 @@ export const Projects = () => {
                       <Col xs={6} md={6} lg={4} key={index} className="mb-4 mb-md-5 project-col">
                         <div className="project-card-wrapper">
                           <div className="project-img-box">
-                            <img src={project.imgUrl} alt={project.title} className="project-img" />
+                            <img src={project.imgUrl} alt={project.title} className="project-img" loading="lazy" width="800" height="600" />
                             <div className="project-overlay">
                               <div className="project-overlay-content">
                                 <span className="project-tag">{project.category}</span>

@@ -6,15 +6,15 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Team.css';
 
-// Import team member avatars
-import member1 from "../assets/img/team-member1.png";
-import member2 from "../assets/img/team-member2.png";
-import member3 from "../assets/img/team-member3.png";
-import member4 from "../assets/img/team-member4.png";
-import member5 from "../assets/img/team-member5.png";
-import member6 from "../assets/img/team-member6.png";
-import member7 from "../assets/img/team-member7.png";
-import member8 from "../assets/img/team-member8.png";
+// Import optimized team member avatars (WebP)
+import member1 from "../assets/img/team-member1.webp";
+import member2 from "../assets/img/team-member2.webp";
+import member3 from "../assets/img/team-member3.webp";
+import member4 from "../assets/img/team-member4.webp";
+import member5 from "../assets/img/team-member5.webp";
+import member6 from "../assets/img/team-member6.webp";
+import member7 from "../assets/img/team-member7.webp";
+import member8 from "../assets/img/team-member8.webp";
 
 export const Team = () => {
   const teamList = [
@@ -108,7 +108,7 @@ export const Team = () => {
                       <Col xs={6} sm={6} md={6} lg={3} key={index} className="mb-3 mb-md-4">
                         <div className="team-card-wrapper">
                           <div className="team-img-box">
-                            <img src={member.imgUrl} alt={member.name} className="team-img" />
+                            <img src={member.imgUrl} alt={member.name} className="team-img" loading="lazy" width="400" height="400" />
                           </div>
                           <div className="team-content">
                             <h4>{member.name}</h4>
