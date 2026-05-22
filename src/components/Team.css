@@ -1,0 +1,164 @@
+/* Team.css */
+.team {
+  background-color: transparent;
+  padding: 80px 0;
+  position: relative;
+}
+
+.team h2 {
+  background: linear-gradient(135deg, #ffd700 0%, #f39c12 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.team h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #aa367c, #f39c12);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.team h2:hover::after {
+  width: 100px;
+}
+
+.team-card-wrapper {
+  background: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-img-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease, opacity 0.5s ease;
+  filter: grayscale(35%);
+  opacity: 0.85;
+}
+
+.team-content {
+  padding: 25px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.team-content h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.team-role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f39c12;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.team-bio {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.team-socials a {
+  color: #b0b0b0;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom color-specific halos for social icons on hover */
+.team-socials a:nth-child(1):hover {
+  color: #0077b5 !important; /* LinkedIn Blue */
+  border-color: rgba(0, 119, 181, 0.5) !important;
+  background: rgba(0, 119, 181, 0.1) !important;
+  box-shadow: 0 0 15px rgba(0, 119, 181, 0.45) !important;
+  transform: translateY(-3px) scale(1.08);
+}
+
+.team-socials a:nth-child(2):hover {
+  color: #fff !important; /* GitHub White/Purple */
+  border-color: rgba(110, 84, 148, 0.5) !important;
+  background: rgba(110, 84, 148, 0.15) !important;
+  box-shadow: 0 0 15px rgba(110, 84, 148, 0.45) !important;
+  transform: translateY(-3px) scale(1.08);
+}
+
+.team-socials a:nth-child(3):hover {
+  color: #1da1f2 !important; /* Twitter/X Cyan */
+  border-color: rgba(29, 161, 242, 0.5) !important;
+  background: rgba(29, 161, 242, 0.1) !important;
+  box-shadow: 0 0 15px rgba(29, 161, 242, 0.45) !important;
+  transform: translateY(-3px) scale(1.08);
+}
+
+/* Hover States */
+.team-card-wrapper:hover {
+  transform: translateY(-8px);
+  border-color: rgba(170, 54, 124, 0.3);
+  box-shadow: 0 15px 35px rgba(170, 54, 124, 0.15), 0 0 20px rgba(74, 47, 189, 0.15);
+}
+
+.team-card-wrapper:hover .team-img {
+  transform: scale(1.06);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.team-card-wrapper:hover .team-img-box {
+  border-bottom-color: rgba(170, 54, 124, 0.25);
+}
+
+@media (max-width: 991px) {
+  .team-card-wrapper {
+    margin-bottom: 20px;
+  }
+}

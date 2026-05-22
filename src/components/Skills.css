@@ -1,0 +1,161 @@
+.services {
+  padding: 6rem 1rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+.service-card {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+  min-height: 350px; 
+  max-width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(243, 156, 18, 0.35) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.65), 0 0 25px rgba(170, 54, 124, 0.3), 0 0 15px rgba(74, 47, 189, 0.3) !important;
+  background: rgba(8, 8, 12, 0.45) !important;
+}
+
+.icon-container {
+  width: 6rem;
+  height: 6rem;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.service-card:hover .icon-container {
+  background: linear-gradient(135deg, rgba(243, 156, 18, 0.25) 0%, rgba(170, 54, 124, 0.2) 100%) !important;
+  border-color: rgba(243, 156, 18, 0.5);
+  box-shadow: 0 8px 25px rgba(243, 156, 18, 0.25);
+  transform: rotate(360deg) scale(1.05);
+}
+
+.icon-container svg {
+  color: #f39c12;
+  filter: drop-shadow(0 0 8px rgba(243, 156, 18, 0.4));
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.service-card:hover .icon-container svg {
+  color: #ffd700;
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 16px rgba(255, 215, 0, 0.85));
+}
+
+.service-card h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f39c12 !important;
+  margin-bottom: 1rem;
+  transition: color 0.4s;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.service-card:hover h5 {
+  color: #ffd700 !important;
+}
+
+@media (max-width: 1024px) {
+  .service-card {
+    padding: 2rem;
+    min-height: 350px; /* Adjust for smaller screens */
+  }
+  
+  .service-card h5 {
+    font-size: 1.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+
+  .icon-container {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    padding: 1.5rem;
+    min-height: 300px; /* Adjust for tablet screens */
+  }
+
+  .service-card h5 {
+    font-size: 1.25rem;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
+  }
+
+  .icon-container {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    padding: 1.25rem;
+    min-height: 280px; /* Adjust for mobile screens */
+  }
+
+  .service-card h5 {
+    font-size: 1.15rem;
+  }
+
+  .service-card p {
+    font-size: 0.8rem;
+  }
+
+  .icon-container {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+/* Slick dots styling for Services section */
+.services .slick-dots {
+  bottom: -40px !important;
+}
+
+.services .slick-dots li button::before {
+  color: #f39c12 !important;
+  font-size: 8px !important;
+  opacity: 0.3 !important;
+  transition: all 0.3s ease;
+}
+
+.services .slick-dots li.slick-active button::before {
+  color: #ffd700 !important;
+  opacity: 1 !important;
+  font-size: 12px !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8) !important;
+}
