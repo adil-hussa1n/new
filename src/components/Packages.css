@@ -155,13 +155,104 @@
 }
 
 @media (max-width: 768px) {
+  .packages h2 {
+    font-size: 2rem;
+  }
+
   .custom-tab {
-    margin: 5px;
-    padding: 8px 15px;
+    margin: 4px 5px !important;
+    padding: 8px 14px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .package-card {
+    padding: 20px 15px !important;
+  }
+
+  .package-card .card-title {
+    font-size: 1.3rem;
+  }
+
+  .package-card .card-price {
+    font-size: 1.1rem;
+  }
+
+  .features-list li {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .packages {
+    padding: 50px 0;
+  }
+
+  .packages h2 {
+    font-size: 1.7rem;
+  }
+
+  .custom-tab {
+    margin: 3px 4px !important;
+    padding: 7px 12px !important;
+    font-size: 0.8rem !important;
+    border-radius: 20px !important;
+  }
+
+  .package-card {
+    padding: 18px 14px !important;
+  }
+
+  .package-card .card-title {
+    font-size: 1.2rem;
+  }
+
+  .package-card .card-price {
+    font-size: 1rem;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+  }
+
+  .features-list {
+    margin-bottom: 20px;
+  }
+
+  .features-list li {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .btn-package {
+    padding: 10px;
     font-size: 0.9rem;
   }
-  .package-card {
-    padding: 20px 15px;
+
+  .popular-badge-wrapper {
+    top: -10px;
+    right: 15px;
+  }
+
+  .popular-badge {
+    font-size: 0.65rem;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .packages h2 {
+    font-size: 1.5rem;
+  }
+
+  .custom-tab {
+    padding: 6px 10px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .package-card .card-title {
+    font-size: 1.1rem;
+  }
+
+  .features-list li {
+    font-size: 0.8rem;
   }
 }
 

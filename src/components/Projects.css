@@ -202,17 +202,97 @@
 }
 
 @media (max-width: 768px) {
-  .project-card-wrapper {
-    height: 320px;
+  .project {
+    padding: 50px 0;
   }
+
+  .project h2 {
+    font-size: 2rem;
+  }
+
+  .project-filter-btn {
+    margin: 4px 5px !important;
+    padding: 8px 16px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .project-card-wrapper {
+    height: 300px;
+  }
+
   .project-overlay {
     padding: 20px;
   }
+
   .project-overlay-content h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
+
   .project-overlay-content p {
     font-size: 0.85rem;
     margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .project {
+    padding: 40px 0;
+  }
+
+  .project h2 {
+    font-size: 1.7rem;
+  }
+
+  .project-filter-btn {
+    margin: 3px 4px !important;
+    padding: 7px 12px !important;
+    font-size: 0.8rem !important;
+    border-radius: 20px !important;
+  }
+
+  .project-card-wrapper {
+    height: 260px;
+  }
+
+  .project-overlay {
+    padding: 16px;
+  }
+
+  .project-overlay-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .project-overlay-content p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .project-tag {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+  }
+
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  .btn-view-project {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .project h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card-wrapper {
+    height: 220px;
+  }
+
+  .project-overlay-content h4 {
+    font-size: 1rem;
   }
 }

@@ -301,11 +301,12 @@
 
 @media (max-width: 768px) {
   .about-us {
-    padding: 6rem 0;
+    padding: 5rem 0;
   }
   
   .bento-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
   
   .bento-large, .bento-medium {
@@ -315,5 +316,112 @@
   .about-intro-left .lead-text {
     font-size: 16px;
   }
+
+  .bento-item {
+    padding: 24px;
+  }
+
+  .bento-item h4 {
+    font-size: 18px;
+  }
+
+  .bento-item p {
+    font-size: 14px;
+  }
 }
 
+@media (max-width: 576px) {
+  .about-us {
+    padding: 4rem 0;
+  }
+
+  .about-tag {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .section-subheading {
+    font-size: 18px;
+  }
+
+  .about-intro-left .lead-text {
+    font-size: 15px;
+  }
+
+  .bento-grid {
+    gap: 12px;
+  }
+
+  .bento-item {
+    padding: 20px;
+  }
+
+  .bento-icon-box {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .bento-item h4 {
+    font-size: 17px;
+  }
+
+  .bento-item p {
+    font-size: 13px;
+  }
+
+  .tech-badge {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .core-focus-list li {
+    gap: 10px;
+  }
+
+  .core-focus-list h5 {
+    font-size: 14px;
+  }
+
+  .core-focus-list p {
+    font-size: 13px;
+  }
+
+  /* Roadmap timeline mobile */
+  .roadmap-line {
+    display: none;
+  }
+
+  .roadmap-step {
+    padding: 20px !important;
+  }
+
+  .step-number {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .step-title {
+    font-size: 16px;
+  }
+
+  .step-desc {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-us {
+    padding: 3rem 0;
+  }
+
+  .bento-item {
+    padding: 16px;
+  }
+
+  .bento-item h4 {
+    font-size: 16px;
+  }
+}

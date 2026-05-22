@@ -64,3 +64,34 @@
     margin-bottom: 15px;
   }
 }
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 110px;
+    margin: 0 auto 12px;
+    display: block;
+  }
+
+  .social-icon {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icon a.social-link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-icon a.social-link svg {
+    font-size: 1rem !important;
+  }
+
+  .text-gray-400 {
+    font-size: 0.82rem;
+  }
+}
