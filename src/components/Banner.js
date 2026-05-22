@@ -38,8 +38,9 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="align-items-center gy-5">
-          <Col xs={12} lg={6} xl={7} className="order-2 order-lg-1 text-center text-lg-start">
+        <Row className="align-items-center gy-3 gy-lg-5">
+          {/* Text Column - appears first in DOM so it shows first on mobile */}
+          <Col xs={12} lg={6} xl={7} className="text-center text-lg-start">
             <TrackVisibility once>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
@@ -95,12 +96,14 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} lg={6} xl={5} className="order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end">
+
+          {/* Code Window Column - appears second on mobile */}
+          <Col xs={12} lg={6} xl={5} className="d-flex justify-content-center justify-content-lg-end">
             <TrackVisibility once>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""} style={{ width: "100%", maxWidth: "480px" }}>
                   <div className="hero-img-wrapper">
-                    {/* Glowing Tech Code Window Mockup (Replaces Rocket Graphic) */}
+                    {/* Glowing Tech Code Window Mockup */}
                     <div className="hero-code-window glass-card">
                       <div className="code-window-header">
                         <div className="window-dots">
@@ -132,8 +135,8 @@ export const Banner = () => {
                       </div>
                     </div>
                     
-                    {/* Floating glass badge 1 */}
-                    <div className="floating-badge badge-top-right">
+                    {/* Floating glass badges - only visible on desktop */}
+                    <div className="floating-badge badge-top-right d-none d-lg-flex">
                       <div className="badge-glow"></div>
                       <div className="badge-content">
                         <span className="badge-icon">🚀</span>
@@ -144,8 +147,7 @@ export const Banner = () => {
                       </div>
                     </div>
                     
-                    {/* Floating glass badge 2 */}
-                    <div className="floating-badge badge-bottom-left">
+                    <div className="floating-badge badge-bottom-left d-none d-lg-flex">
                       <div className="badge-glow"></div>
                       <div className="badge-content">
                         <span className="badge-icon">⚡</span>

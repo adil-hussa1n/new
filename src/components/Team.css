@@ -199,30 +199,37 @@
   }
 
   .team-content {
-    padding: 18px 14px;
+    padding: 12px 10px;
   }
 
   .team-content h4 {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
   }
 
   .team-role {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     letter-spacing: 0.5px;
+    margin-bottom: 8px;
   }
 
   .team-bio {
-    font-size: 0.82rem;
-    margin-bottom: 14px;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .team-socials a {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
   }
 
   .team-socials {
-    gap: 10px;
+    gap: 8px;
   }
 }
 
@@ -231,7 +238,19 @@
     font-size: 1.5rem;
   }
 
+  .team-content {
+    padding: 10px 8px;
+  }
+
   .team-content h4 {
-    font-size: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .team-role {
+    font-size: 0.6rem;
+  }
+  
+  .team-bio {
+    font-size: 0.65rem;
   }
 }

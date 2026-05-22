@@ -105,7 +105,7 @@ export const Team = () => {
                   
                   <Row className="justify-content-center">
                     {teamList.map((member, index) => (
-                      <Col sm={6} md={6} lg={3} key={index} className="mb-4">
+                      <Col xs={6} sm={6} md={6} lg={3} key={index} className="mb-3 mb-md-4">
                         <div className="team-card-wrapper">
                           <div className="team-img-box">
                             <img src={member.imgUrl} alt={member.name} className="team-img" />

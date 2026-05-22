@@ -142,7 +142,7 @@ export const Projects = () => {
                   {/* Projects Grid */}
                   <Row className="project-grid justify-content-center">
                     {filteredProjects.map((project, index) => (
-                      <Col md={6} lg={4} key={index} className="mb-5 project-col">
+                      <Col xs={6} md={6} lg={4} key={index} className="mb-4 mb-md-5 project-col">
                         <div className="project-card-wrapper">
                           <div className="project-img-box">
                             <img src={project.imgUrl} alt={project.title} className="project-img" />
