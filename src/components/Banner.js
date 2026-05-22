@@ -39,7 +39,7 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center gy-5">
-          <Col xs={12} lg={6} xl={7}>
+          <Col xs={12} lg={6} xl={7} className="order-2 order-lg-1 text-center text-lg-start">
             <TrackVisibility once>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
@@ -82,7 +82,7 @@ export const Banner = () => {
                       const anchor = document.querySelector("#contact");
                       if (anchor) anchor.scrollIntoView({ behavior: "smooth", block: "start" });
                     }}>
-                      <span>Let’s Connect</span> <ArrowRightCircle size={22} className="ms-2" />
+                      <span>Let's Connect</span> <ArrowRightCircle size={22} className="ms-2" />
                     </button>
                     <button className="btn-secondary-glass" onClick={() => {
                       const anchor = document.querySelector("#projects");
@@ -95,7 +95,7 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} lg={6} xl={5} className="d-flex justify-content-center justify-content-lg-end">
+          <Col xs={12} lg={6} xl={5} className="order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end">
             <TrackVisibility once>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""} style={{ width: "100%", maxWidth: "480px" }}>
